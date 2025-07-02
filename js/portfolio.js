@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Código do menu hambúrguer
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('nav ul.menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+
     // Criar footer dinâmico
     const footer = document.createElement("footer");
     footer.style.backgroundColor = "var(--black-matte)";
@@ -48,21 +56,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Projetos dinâmicos
     const projetos = [
-    {
-        titulo: "CLASSIFICAÇÃO DE INFORMAÇÕES (CIMGS)",
-        descricao: "Sistema privado para uma empresa com formulário de classificação de dados sensíveis."
-    },
-    {
-        titulo: "Sistema de Gerenciamento Comercial",
-        descricao: "Aplicação desenvolvida com Flask e Node.js para cadastro de clientes e pedidos."
-    },
-{
-    titulo: "Jogo de Batalha Naval",
-    descricao: "Projeto desenvolvido com Python e tecnologias web, combinando lógica de programação e interface interativa para simular o clássico jogo de Batalha Naval."
-}
-
+        {
+            titulo: "CLASSIFICAÇÃO DE INFORMAÇÕES (CIMGS)",
+            descricao: "Sistema privado para uma empresa com formulário de classificação de dados sensíveis."
+        },
+        {
+            titulo: "Sistema de Gerenciamento Comercial",
+            descricao: "Aplicação desenvolvida com Flask e Node.js para cadastro de clientes e pedidos."
+        },
+        {
+            titulo: "Jogo de Batalha Naval",
+            descricao: "Projeto desenvolvido com Python e tecnologias web, combinando lógica de programação e interface interativa para simular o clássico jogo de Batalha Naval."
+        }
     ];
-
 
     const portfolioContainer = document.getElementById("portfolio-container");
 
