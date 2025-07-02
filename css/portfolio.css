@@ -1,0 +1,250 @@
+/* Definição de variáveis para cores */
+:root {
+    --primary-color: #3498db;
+    --hover-color: #2980b9;
+    --black-matte: #1c1c1c;
+    --white: #ffffff;
+}
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+header {
+    background-color: #222;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Seções */
+.section {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seção Principal - Imagem e Texto */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.home-content .text-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 300px; /* Tamanho maior para dar mais destaque */ 
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Títulos e Parágrafos da Home */
+.home-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Seções de Serviços e Portfólio */
+#services, #portfolio {
+    background-color: #e0e0e0;
+}
+
+#services h2, 
+#portfolio h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#services p, 
+#portfolio p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Seção de Contato */
+#contact {
+    background-color: var(--black-matte);
+    color: white;
+}
+
+#contact h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Divisórias */
+.divider {
+    width: 50%;              /* Ajuste conforme necessário */
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 40px auto;       /* Espaçamento vertical e centralização */
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    font-size: 22px;
+    padding: 15px 40px;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #2980b9, #1f669b);
+}
+
+/* Formulário de contato */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Texto acima das redes sociais */
+.social-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; /* Ajusta a distância entre o botão e esse texto */
+    margin-bottom: 20px;
+    color: white;     /* Se o fundo for escuro, manter branco */
+}
+
+/* Redes sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--hover-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content .text-content {
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+    }
+}

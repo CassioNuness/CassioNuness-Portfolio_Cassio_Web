@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Cássio Leonard</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- FontAwesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Carregar o JavaScript -->
+    <script src="js/portfolio.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="home" class="section">
+        <div class="container home-content">
+            <img src="img/foto.jpg" alt="Foto de Cássio Leonard" class="profile-pic">
+
+            <div class="text-content">
+                <h1>Olá, eu sou <span class="highlight">Cássio Leonard</span>.</h1>
+                <p>Bem-vindo ao meu portfólio! Aqui você pode conhecer mais sobre mim, meus serviços e projetos.</p>
+                <a href="#services" class="btn">Saiba mais sobre o que eu faço</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>O que eu faço</h2>
+            <p>Aqui estão algumas das minhas habilidades e serviços que ofereço:</p>
+            <div class="card-container" id="services-cards"></div>
+        </div>
+
+        <a href="#portfolio" class="btn">Veja alguns dos meus trabalhos recentes</a>
+    </section>
+
+    <!-- Seção de Portfólio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Meu Portfólio</h2>
+            <p>Confira abaixo os projetos que desenvolvi até o momento.</p>
+            <div class="card-container" id="portfolio-container"></div>
+            <a href="#contact" class="btn">Entre em contato comigo</a>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="section dark">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <input type="text" name="subject" placeholder="Assunto" required>
+                <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+
+            <!-- Links sociais -->
+            <div class="divider"></div>
+            <p class="social-text">Encontre-me em...</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/cassio-leonard/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/CassioNuness" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="divider"></div>
+        </div>
+    </section>
+</body>
+</html>
