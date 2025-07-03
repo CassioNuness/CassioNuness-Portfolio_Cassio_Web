@@ -79,23 +79,18 @@
     <section id="contact" class="section dark">
         <div class="container">
             <h2>Entre em Contato</h2>
-            <form action="#" method="POST">
+            <form action="https://formsubmit.co/cassio.leonard@gmail.com" method="POST">
+                <!-- Desativa o captcha e redireciona para uma página de agradecimento -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="obrigado.html">
+
                 <input type="text" name="name" placeholder="Seu nome" required />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Seu email"
-                  required
-                />
+                <input type="email" name="email" placeholder="Seu email" required />
                 <input type="text" name="subject" placeholder="Assunto" required />
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="Sua mensagem"
-                  required
-                ></textarea>
+                <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
                 <button type="submit" class="btn">Enviar Mensagem</button>
             </form>
+
 
             <!-- Links sociais -->
             <div class="divider"></div>
